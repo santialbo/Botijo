@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{4925A630-B079-445d-BCD4-3A9C94FE9307}") = "Botijo", "Botijo\Botijo.fsproj", "{7F599227-3FB9-46F0-A698-E24AEA309EB8}"
+EndProject
+Project("{4925A630-B079-445d-BCD4-3A9C94FE9307}") = "IRCbot", "..\IRCbot\IRCbot\IRCbot.fsproj", "{D8930F72-B49E-422C-8BC7-700C99F6B527}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F599227-3FB9-46F0-A698-E24AEA309EB8}.Debug|x86.ActiveCfg = Debug|x86
+		{7F599227-3FB9-46F0-A698-E24AEA309EB8}.Debug|x86.Build.0 = Debug|x86
+		{7F599227-3FB9-46F0-A698-E24AEA309EB8}.Release|x86.ActiveCfg = Release|x86
+		{7F599227-3FB9-46F0-A698-E24AEA309EB8}.Release|x86.Build.0 = Release|x86
+		{D8930F72-B49E-422C-8BC7-700C99F6B527}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D8930F72-B49E-422C-8BC7-700C99F6B527}.Debug|x86.Build.0 = Debug|Any CPU
+		{D8930F72-B49E-422C-8BC7-700C99F6B527}.Release|x86.ActiveCfg = Release|Any CPU
+		{D8930F72-B49E-422C-8BC7-700C99F6B527}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Botijo\Botijo.fsproj
+	EndGlobalSection
+EndGlobal
