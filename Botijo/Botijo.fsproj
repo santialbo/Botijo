@@ -12,6 +12,8 @@
     <BuildOrder>
       <BuildOrder>
         <String>AssemblyInfo.fs</String>
+        <String>Plugins/Google.fs</String>
+        <String>Plugins.fs</String>
         <String>Botijo.fs</String>
         <String>Program.fs</String>
       </BuildOrder>
@@ -42,11 +44,14 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
     <Compile Include="Program.fs" />
     <Compile Include="Botijo.fs" />
+    <Compile Include="Plugins\Google.fs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" />
   <ItemGroup>
@@ -54,5 +59,8 @@
       <Project>{D8930F72-B49E-422C-8BC7-700C99F6B527}</Project>
       <Name>IRCbot</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Plugins\" />
   </ItemGroup>
 </Project>

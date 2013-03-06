@@ -1,16 +1,26 @@
 
 module Botijo.Bot
 
+open System
 open IRCbot.Util
+open Botijo.Plugins
 
-let nick = "Botijo"
+let nick = "botijo"
+
+let CommandHandler (user: string) (dest: string) (text: string) (write: string -> unit) =
+    let say text = write (sprintf "PRIVMSG %s :%s" dest text)
+    
+    match text with
+    | Match @"^!(?:g(?:oogle)?) (.*)$" [what] -> say (Google.ImFeelingLucky what)
+    | Match @"^!(?:date)(?: .*)?$" _ -> say (sprintf "%A" DateTime.Now)
+    | _ -> say "I don't have such command"
+    
 
 let msgHandler (line: string) (write: string -> unit) =
 
-    let say channel text = write (sprintf "PRIVMSG %s :%s" channel text)
-    let ping what = write (sprintf "PONG :%s" what)
+    let say dest text = write (sprintf "PRIVMSG %s :%s" dest text)
     
     match line with
-    | Message (PING(what)) -> ping what
     | Message (JOIN(user, channel)) when user = nick -> say channel "Hello world!"
+    | Message (PRIVMSG(user, dest, text) as privmsg) when text.StartsWith "!" -> (CommandHandler user dest text write)
     | _ -> ()
