@@ -1,18 +1,19 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Botijo/Plugins/Google.fs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Botijo/Botijo.fs">
     <Files>
-      <File FileName="../IRCbot/IRCbot/Util.fs" Line="11" Column="1" />
-      <File FileName="Botijo/Botijo.fs" Line="5" Column="20" />
-      <File FileName="Botijo/Program.fs" Line="16" Column="1" />
-      <File FileName="Botijo/Plugins/Google.fs" Line="10" Column="1" />
+      <File FileName="Botijo/Botijo.fs" Line="20" Column="24" />
+      <File FileName="Botijo/Plugins/Google.fs" Line="2" Column="29" />
+      <File FileName="Botijo/Plugins/Lolcats.fs" Line="16" Column="5" />
+      <File FileName="Botijo/Plugins/Util.fs" Line="17" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Botijo" expanded="True">
-            <Node name="References" expanded="True" selected="True" />
+            <Node name="References" expanded="True" />
             <Node name="Plugins" expanded="True" />
+            <Node name="Botijo.fs" selected="True" />
           </Node>
           <Node name="IRCbot" expanded="True" />
         </State>

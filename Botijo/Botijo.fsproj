@@ -12,8 +12,9 @@
     <BuildOrder>
       <BuildOrder>
         <String>AssemblyInfo.fs</String>
+        <String>Plugins/Util.fs</String>
         <String>Plugins/Google.fs</String>
-        <String>Plugins.fs</String>
+        <String>Plugins/Lolcats.fs</String>
         <String>Botijo.fs</String>
         <String>Program.fs</String>
       </BuildOrder>
@@ -52,6 +53,8 @@
     <Compile Include="Program.fs" />
     <Compile Include="Botijo.fs" />
     <Compile Include="Plugins\Google.fs" />
+    <Compile Include="Plugins\Lolcats.fs" />
+    <Compile Include="Plugins\Util.fs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" />
   <ItemGroup>

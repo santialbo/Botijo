@@ -1,23 +1,13 @@
 
 module Botijo.Plugins.Google
 
-open System.IO
-open System.Net
 open System.Web.Script.Serialization
 open System.Collections.Generic
 open System.Text.RegularExpressions
 
 open IRCbot.Util
+open Botijo.Plugins.Util
 
-let Download (url: string) =
-    try
-        let req = WebRequest.Create(url)
-        let resp = req.GetResponse()
-        let stream = resp.GetResponseStream()
-        use reader = new StreamReader(stream)
-        reader.ReadToEnd()
-    with
-    | _ -> ""
 
 let GoogleQuery text =
     try

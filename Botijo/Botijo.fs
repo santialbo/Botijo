@@ -13,6 +13,7 @@ let CommandHandler (user: string) (dest: string) (text: string) (write: string -
     match text with
     | Match @"^!(?:g(?:oogle)?) (.*)$" [what] -> say (Google.ImFeelingLucky what)
     | Match @"^!(?:date)(?: .*)?$" _ -> say (sprintf "%A" DateTime.Now)
+    | Match @"^!(?:lol)?cat(?: .*)?$" _ -> say (Lolcats.RandomLolcat())
     | _ -> say "I don't have such command"
     
 
